@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tea Time | Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>Sr.</th>
+                <th>Items</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Cappuccino</td>
+                <td>Rs. 500</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Green Tea</td>
+                <td>Rs. 650</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Masala Chai</td>
+                <td>Rs. 300</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Samosa Plate</td>
+                <td>Rs. 250</td>
+            </tr>
+        </table>
+        <button onclick="orderConfirmed()">Order Now</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tea Time. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function orderConfirmed() {
+            console.log("Order Confirmed!!");
+            window.alert("You Confirmed the Order! We will serve you shortly.");
+        }
+    </script>
+</body>
+</html>
