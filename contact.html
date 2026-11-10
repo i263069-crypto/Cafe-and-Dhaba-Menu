@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tea Time | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <div class="container" style="max-width: 500px;">
+        <h2>We'd love to hear from you!</h2>
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+        <button onclick="submitForm()">Send Message</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tea Time. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function submitForm() {
+            // Get the value typed into the name box
+            let userName = document.getElementById("name").value;
+            
+            // Check if the name box is empty
+            if (userName === "") {
+                window.alert("Please enter your name before submitting!");
+            } else {
+                console.log("Message sent by " + userName);
+                window.alert("Thank you, " + userName + "! Your message has been sent.");
+                
+                // Clear the form after successful submission
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+            }
+        }
+    </script>
+</body>
+</html>
